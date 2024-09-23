@@ -1,0 +1,36 @@
+/* Main container */
+.custom-solution-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    background: linear-gradient(to right, #e0f7e9, #5dd39e, #28a745); /* Replicating the gradient */
+    padding: 20px 40px;
+    border-radius: 20px; /* For rounded corners */
+    max-width: 1000px;
+    margin: 40px auto; /* Center the banner */
+  }
+  
+  /* Text styling */
+  .custom-solution-text {
+    color: #1d7144; /* Darker green for the text */
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Button styling */
+  .custom-solution-button {
+    background-color: rgb(255, 253, 253);
+    color: #1d7144;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-solution-button:hover {
+    background-color: #f2f2f2; /* Slightly darker on hover */
+  }

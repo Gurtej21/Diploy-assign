@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    /* width: 100%; */
+    /* background-color: white; */
+  }
+  
+  .content {
+    font-weight: bold;
+    font-size: 10px;
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 60px;
+    /* color: white; */
+  }
+  
+  .features {
+    list-style: none;
+    font-weight: 490;
+    font-size: 50px;
+    margin-left: 0px;
+    margin-right: 180px;
+    padding: 10px;
+    
+  }
+  
+  .features li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    margin-right: 150px;
+    padding: 10px;
+  }
+  
+  .start-btn,
+  .how-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .start-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .how-btn {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .how-btn .play-icon {
+    margin-right: 8px; /* Add space between icon and text */
+  }
+  .image-section {
+    position: relative;
+  }
+  
+  .product-image {
+    max-width: 500px;
+    max-height: 100%;
+    background-color: white;
+  }
+  .last-line{
+    margin-top: 10px;
+    font-size:18px;
+    font-weight: 500;
+    color: #28a745;
+
+
+  }
+  

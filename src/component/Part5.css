@@ -1,0 +1,74 @@
+/* General Layout */
+.store-connect-container {
+    text-align: center;
+    padding: 50px 0;
+    background-color: white;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+  }
+  
+  .platforms-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .platform-card {
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+  
+  /* Transition when scrolled into view */
+  .platform-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .platform-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .platform-name {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Scroll behavior smooth */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Responsive  */
+   /* @media (max-width: 768px) {
+    .platforms-grid {
+      gap: 20px;
+    }
+  
+    .platform-card {
+      width: 120px;
+      height: 120px;
+      }
+} */

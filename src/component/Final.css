@@ -1,0 +1,97 @@
+/* Footer container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-top: 1px solid #eaeaea; /* Optional border for separation */
+  }
+  
+  /* Logo section */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    height: 60px;
+    width: 60px; /* Adjust height as needed */
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+    color: #28a745; /* Green color for Printify */
+    font-weight: bold;
+  }
+  
+  /* Social media icons */
+  .social-icons {
+    display: flex;
+    gap: 15px; /* Spacing between icons */
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    color: #28a745; /* Green color for icons */
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #1d7f37; /* Darker green on hover */
+    cursor: pointer;
+  }
+  
+  /* Media Queries */
+  
+  /* Tablet View: Stack the content and adjust padding */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column; /* Stack elements vertically */
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .logo {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  
+    .logo-image {
+      height: 50px; /* Adjust logo size for smaller screens */
+    }
+  
+    .logo span {
+      font-size: 1.2rem; /* Smaller font size on smaller screens */
+    }
+  
+    .icon {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* Mobile View: Adjust icon size and spacing for mobile */
+  @media (max-width: 480px) {
+    .footer-container {
+      padding: 10px;
+    }
+  
+    .logo-image {
+      height: 25px; /* Smaller logo for mobile */
+    }
+  
+    .logo span {
+      font-size: 1rem;
+    }
+  
+    .icon {
+      font-size: 1.2rem;
+      gap: 10px; /* Less space between icons on mobile */
+    }
+  }
+  

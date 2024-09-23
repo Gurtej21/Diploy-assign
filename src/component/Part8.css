@@ -1,0 +1,220 @@
+/* Container for the entire section */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.profit-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  height: 100vh; /* Full height for demo purposes */
+}
+
+/* Left content block styling */
+.content1 {
+  background-color: #1e2f46;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 600px;
+  margin-left: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 750px;
+}
+
+/* Heading and Subheading */
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #c1c1c1;
+  margin-bottom: 2rem;
+}
+
+/* Box for price and profit details */
+.profit-box {
+  background-color: #253b55;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.profit-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+
+.price {
+  color: #2da3ff;
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #3f4f68;
+  margin: 1rem 0;
+}
+
+.profit {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profit-amount {
+  color: #28a745;
+  font-size: 1.3rem;
+}
+
+/* Start selling button styling */
+.start-selling {
+  background-color: #28a745;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-selling:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.footer {
+  font-size: 0.9rem;
+  background-color: #1e2f46;
+  color: #302f2f;
+  margin-top: 2rem;
+}
+
+/* Right side image */
+.image {
+  width: 45%;
+  display: flex;
+  margin-right: 180px;
+  justify-content: center;
+  align-items: center;
+  transition: scale(1.05);
+}
+
+.image img:hover {
+  transform: scale(1.05);
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 80px;
+}
+
+/* Media Queries */
+
+/* Tablet View: Adjust layout for screen widths below 1024px */
+@media (max-width: 1024px) {
+  .profit-section {
+      flex-direction: column; /* Stack the sections vertically */
+      height: auto; /* Remove fixed height */
+  }
+
+  .content1 {
+      width: 90%; /* Take more width */
+      margin-left: 0;
+      margin-bottom: 20px; /* Add spacing between sections */
+  }
+
+  .image {
+      width: 80%;
+      margin-right: 0;
+  }
+}
+
+/* Mobile View: Adjust layout for screen widths below 768px */
+@media (max-width: 768px) {
+  .profit-section {
+      padding: 1rem; /* Reduce padding */
+  }
+
+  .content1 {
+      padding: 1rem; /* Reduce padding */
+      width: 100%; /* Take full width */
+      height: auto; /* Remove fixed height */
+  }
+
+  h2 {
+      font-size: 2rem; /* Reduce font size */
+  }
+
+  .subtitle {
+      font-size: 1rem; /* Reduce subtitle size */
+  }
+
+  .profit-box {
+      padding: 1rem; /* Reduce box padding */
+  }
+
+  .start-selling {
+      font-size: 1rem; /* Adjust button size */
+      padding: 0.8rem 1.2rem;
+  }
+
+  .image {
+      width: 100%; /* Full width for mobile */
+  }
+
+  .image img {
+      border-radius: 20px; /* Adjust image radius for mobile */
+  }
+}
+
+/* Small Mobile View: Adjust layout for screen widths below 480px */
+@media (max-width: 480px) {
+  .profit-section {
+      padding: 0.5rem; /* Further reduce padding */
+  }
+
+  h2 {
+      font-size: 1.5rem; /* Further reduce font size */
+  }
+
+  .subtitle {
+      font-size: 0.9rem; /* Reduce subtitle size */
+  }
+
+  .profit-box {
+      padding: 0.8rem; /* Reduce box padding */
+  }
+
+  .start-selling {
+      font-size: 0.9rem; 
+      padding: 0.6rem 1rem;
+  }
+
+  .image img {
+      border-radius: 10px; 
+  }
+}
